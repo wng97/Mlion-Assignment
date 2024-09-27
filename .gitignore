@@ -3,5 +3,4 @@ node_modules/
 *.html
 *.xml
 *.css
-*.png
 dist/
