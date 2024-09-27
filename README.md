@@ -156,3 +156,24 @@ DELETE http://localhost:5001/items/:item_id
 Request params:
 
 - **item_id** : string, mandatory
+
+### Unit Test
+
+Unit test for this project is using [vitest](https://vitest.dev/guide/).
+
+```bash
+# to run up unit test
+npm run test
+
+# to run up test coverage
+npm run coverage
+```
+
+### Database design
+
+There is 2 main entities and table:
+
+1. Locations
+2. Items
+
+![alt text](image.png)
