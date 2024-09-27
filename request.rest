@@ -1,0 +1,50 @@
+### create location
+POST http://localhost:5001/locations/create
+Content-Type: application/json
+
+{
+  "name": "test",
+  "coordinate":[[-3,-1], [-5,-1], [-3,2 ], [-5, 2]]
+}
+
+### get all locations
+GET http://localhost:5001/locations/list
+
+### get location by id
+GET http://localhost:5001/locations/8
+
+### update location name
+PUT http://localhost:5001/locations/8
+Content-Type: application/json
+
+{
+  "name": "newLocation"
+}
+
+### delete location
+DELETE http://localhost:5001/locations/10
+
+
+### create items
+POST http://localhost:5001/items/create/8
+Content-Type: application/json
+
+{
+  "name": "item1",
+  "type": "box",
+  "length": 3,
+  "height": 4,
+  "width": 2
+}
+
+### get all items
+GET http://localhost:5001/items/list
+
+### get item by id
+GET http://localhost:5001/items/1
+
+### change item location
+PUT http://localhost:5001/items/1/location/13
+
+### delete item
+DELETE http://localhost:5001/items/2

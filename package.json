@@ -1,0 +1,33 @@
+{
+  "name": "mlion-assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "dev": "npx tsc -w & nodemon dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "@types/pg": "^8.11.10",
+    "@vitest/coverage-v8": "^2.1.1",
+    "drizzle-kit": "^0.24.2",
+    "nodemon": "^3.1.7",
+    "vitest": "^2.1.1"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "axios": "^1.7.7",
+    "axios-mock-adapter": "^2.0.0",
+    "cors": "^2.8.5",
+    "drizzle-orm": "^0.33.0",
+    "express": "^4.21.0",
+    "pg": "^8.13.0",
+    "zod": "^3.23.8"
+  }
+}
