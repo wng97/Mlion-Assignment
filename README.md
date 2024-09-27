@@ -55,10 +55,10 @@ There is total 10 API, these 10 API can categories to 2 main features, locations
 POST http://localhost:5001/locations/create
 ```
 
-Request body:
-
-- **name** : string, mandatory
-- **coordinate** : number[][] mandatory and length must be exactly 4
+> Request body:
+>
+> - **name** : string, mandatory
+> - **coordinate** : number[][] mandatory and length must be exactly 4
 
 2. List all location
 
@@ -72,9 +72,9 @@ GET http://localhost:5001/locations/list
 GET http://localhost:5001/locations/:location_id
 ```
 
-Request params:
-
-- **location_id** : string, mandatory
+> Request params:
+>
+> - **location_id** : string, mandatory
 
 4. Update location's name
 
@@ -82,13 +82,13 @@ Request params:
 PUT http://localhost:5001/locations/:location_id
 ```
 
-Request params:
+> Request params:
+>
+> - **location_id** : string, mandatory
 
-- **location_id** : string, mandatory
-
-Request body:
-
-- **name** : string, mandatory
+> Request body:
+>
+> - **name** : string, mandatory
 
 5. Delete a specific location
 
@@ -96,9 +96,9 @@ Request body:
 DELETE http://localhost:5001/locations/:location_id
 ```
 
-Request params:
-
-- **location_id** : string, mandatory
+> Request params:
+>
+> - **location_id** : string, mandatory
 
 ### Items
 
@@ -108,17 +108,17 @@ Request params:
 POST http://localhost:5001/items/create/:location_id
 ```
 
-Request params:
+> Request params:
+>
+> - **location_id** : string, mandatory
 
-- **location_id** : string, mandatory
-
-Request body:
-
-- **name** : string, mandatory
-- **type** : string, mandatory
-- **length**: number, mandatory
-- **width**: number, mandatory
-- **height**: number, mandatory
+> Request body:
+>
+> - **name** : string, mandatory
+> - **type** : string, mandatory
+> - **length**: number, mandatory
+> - **width**: number, mandatory
+> - **height**: number, mandatory
 
 2. List all items
 
@@ -132,9 +132,9 @@ GET http://localhost:5001/items/list
 GET http://localhost:5001/items/:item_id
 ```
 
-Request params:
-
-- **item_id** : string, mandatory
+> Request params:
+>
+> - **item_id** : string, mandatory
 
 4. Update item's location
 
@@ -142,10 +142,10 @@ Request params:
 PUT http://localhost:5001/items/:item_id/location/:location_id
 ```
 
-Request params:
-
-- **item_id** : string, mandatory
-- **location_id**: string, mandatory
+> Request params:
+>
+> - **item_id** : string, mandatory
+> - **location_id**: string, mandatory
 
 5. Delete a specific item
 
@@ -153,9 +153,9 @@ Request params:
 DELETE http://localhost:5001/items/:item_id
 ```
 
-Request params:
-
-- **item_id** : string, mandatory
+> Request params:
+>
+> - **item_id** : string, mandatory
 
 ### Unit Test
 
