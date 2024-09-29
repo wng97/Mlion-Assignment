@@ -7,7 +7,7 @@ export default defineConfig({
   dbCredentials: {
     user: "postgres",
     host: "localhost",
-    database: "Mlion02",
+    database: "Mlion01",
     password: "WnR0430",
   },
 });

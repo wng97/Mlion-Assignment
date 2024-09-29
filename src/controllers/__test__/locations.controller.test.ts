@@ -136,7 +136,7 @@ describe("Locations Controller", () => {
         .mockResolvedValue(fakeResult);
       await getLocationById(fakeRequest, res);
       expect(getLocationRowByIdMock).toHaveBeenCalledOnce();
-      expect(res.status).toHaveBeenCalledWith(HTTP_CODES.CREATED);
+      expect(res.status).toHaveBeenCalledWith(HTTP_CODES.OK);
       expect(res.json).toHaveBeenCalledWith(fakeResult);
     });
     it("should return error if getLocationRowById return error", async () => {
